@@ -14,7 +14,7 @@ import hibpython.hibp as hibp
 ```python
 example_variable = hibp.checkpwn("123456")
 ```
-- This will return the value (True, '37509543') where True means the password is compromised and the value 37509543 is the number of times the password was seen in the [haveibeenpwnd.com](https://haveibeenpwned.com/) database
+- This will return the value `(True, '37509543')` where `True` means the password is compromised and the value `37509543` is the number of times the password was seen in the [haveibeenpwnd.com](https://haveibeenpwned.com/) database
 
 # Features
 Right now the module has only one function since the API requires a paid API key.
@@ -22,7 +22,12 @@ Right now the module has only one function since the API requires a paid API key
 checkpwn(password)
 ```
 The user should pass the password as argument while calling this function.
-This function will check if the password has been compromised and returns True along with the number of times it was seen on the database.Else it returns False.
+This function will check if the password has been compromised and returns `True` along with the number of times it was seen on the database.Else it returns `False`.
+
+```python
+check, pwncount = hibp.checkpwn(password)
+```
+We can get the pwn count of the password in the above stated way as the `checkpawn()` function returns two values. 
 
 I am planning on adding one more function soon :D
 
