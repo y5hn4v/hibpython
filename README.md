@@ -1,7 +1,7 @@
 
 # hibpython
 
-A simple module for [haveibeenpwnd.com](haveibeenpwnd.com) written in python which checks if the password has been compromised or found in a data leak using the API from haveibeenpwnd.com.
+A simple module for [haveibeenpwnd.com](https://haveibeenpwned.com/) written in python which checks if the password has been compromised or found in a data leak using the API from haveibeenpwnd.com.
 Please report any bugs/flaws and suggestions to my [twitter](https://twitter.com/y5hn4v)
 
 # Usage
@@ -14,7 +14,7 @@ import hibpython.hibp as hibp
 ```python
 example_variable = hibp.checkpwn("123456")
 ```
-- This will return the value (True, '37509543') where True means the password is compromised and the value 37509543 is the number of times the password was seen in the [haveibeenpwnd.com](haveibeenpwnd.com) database
+- This will return the value (True, '37509543') where True means the password is compromised and the value 37509543 is the number of times the password was seen in the [haveibeenpwnd.com](https://haveibeenpwned.com/) database
 
 # Features
 Right now the module has only one function since the API requires a paid API key.
