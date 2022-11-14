@@ -33,4 +33,4 @@ def checkpwn(password):
                 exit()
         # If the hashes didnt match , returns False stating that the password is safe
         if control == False:
-            return False
+            return False, 0
